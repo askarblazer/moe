@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио | Контакты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Моё портфолио</h1>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html" class="active">Контакты</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-btn">Сменить тему</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-section">
+      <h2>Контакты</h2>
+
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="6" placeholder="Введите сообщение" required></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Контактная информация</h3>
+          <p><strong>Email:</strong> email@example.com</p>
+          <p><strong>Telegram:</strong> <a href="https://t.me/username" target="_blank">@random</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/username" target="_blank">instagram.com/random</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> askar_dev</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
